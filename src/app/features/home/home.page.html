@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      User List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-card>
+  <form [formGroup]="userForm">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-input formControlName="cedula" label="cedula" placeholder="000-000-000"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input formControlName="email" label="email" placeholder="nose@sape.com"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input formControlName="nombre" label="nombre" placeholder="Scorpion"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input formControlName="password" label="password" placeholder="*****"></ion-input>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </form>
+</ion-card>
+
+<ion-button expand="full" (click)="addUser()">Add User</ion-button>
+
+<app-user></app-user>
+
+</ion-content>
