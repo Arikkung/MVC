@@ -9,7 +9,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-card>
-    <form *ngIf="user" [formGroup]="userForm" (ngSubmit)="saveUser()">
+    <form *ngIf="taller" [formGroup]="tallerForm" (ngSubmit)="saveTaller()">
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -54,5 +54,5 @@
     </form>
   </ion-card>
 
-  <ion-button expand="full" (click)="saveUser()">Update User</ion-button>
+  <ion-button expand="full" (click)="saveTaller()">Update User</ion-button>
 </ion-content>

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      User List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-card>
+  <form [formGroup]="tallerForm">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-input formControlName="numero_de_taller" label="numero de taller" placeholder="3"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input formControlName="calificacion" label="calificacion" placeholder="3.5"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input formControlName="nombre_estudiante" label="nombre" placeholder="Arik"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-input formControlName="codigo_estudiante" label="password" placeholder="2210080090"></ion-input>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </form>
+</ion-card>
+
+<ion-button expand="full" (click)="addTaller()">Add Taller</ion-button>
+
+<app-taller></app-taller>
+
+</ion-content>

@@ -5,7 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { UserComponent } from '../user/components/user/user.component';
+import { TallerComponent } from '../taller/components/taller/taller.component';
 
 
 @NgModule({
@@ -16,6 +16,6 @@ import { UserComponent } from '../user/components/user/user.component';
     HomePageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [HomePage, UserComponent]
+  declarations: [HomePage, TallerComponent]
 })
 export class HomePageModule {}

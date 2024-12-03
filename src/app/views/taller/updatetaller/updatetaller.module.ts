@@ -4,9 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { UpdateuserPageRoutingModule } from './updateuser-routing.module';
+import { UpdateuserPageRoutingModule } from './updatetaller-routing.module';
 
-import { UpdateuserPage } from './updateuser.page';
+import { UpdatetallerPage } from './updatetaller.page';
 
 @NgModule({
   imports: [
@@ -16,6 +16,6 @@ import { UpdateuserPage } from './updateuser.page';
     UpdateuserPageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [UpdateuserPage]
+  declarations: [UpdatetallerPage]
 })
 export class UpdateuserPageModule {}

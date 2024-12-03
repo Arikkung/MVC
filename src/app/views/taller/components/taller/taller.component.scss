@@ -1,0 +1,16 @@
+ion-grid {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .table-row {
+    border-bottom: 1px solid var(--ion-color-medium);
+    padding: 10px 0;
+  }
+  
+  ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+  }  
