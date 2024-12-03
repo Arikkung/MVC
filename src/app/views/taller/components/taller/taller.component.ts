@@ -33,6 +33,6 @@ export class TallerComponent implements OnInit {
   }
 
   goToUpdatePage(tallerId: string) {
-    this.router.navigate([`/updateuser`, tallerId]);
+    this.router.navigate([`/updatetaller`, tallerId]);
   }
 }

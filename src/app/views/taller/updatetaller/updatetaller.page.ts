@@ -82,7 +82,7 @@ export class UpdatetallerPage implements OnInit {
 
   private initForm() {
     this.numero_de_taller = new FormControl('', [Validators.required]);
-    this.calificacion = new FormControl('', [Validators.required, Validators.email]);
+    this.calificacion = new FormControl('', [Validators.required]);
     this.nombre_estudiante = new FormControl('', [Validators.required]);
     this.codigo_estudiante = new FormControl('', [Validators.required]);
 
